@@ -14,7 +14,6 @@ public class Server {
         System.out.println("server is running...");
         ServerSocket ss = new ServerSocket(PORT);
         try {
-
             while (true) {
                 new Procezz(ss.accept()).start();
             }
